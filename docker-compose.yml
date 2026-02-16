@@ -13,8 +13,6 @@ services:
       # in a sub-folder, so you will mount '..'. You would then reference this path as the
       # 'workspaceFolder' in '.devcontainer/devcontainer.json' so VS Code starts here.
       - .:/workspace:cached
-      # Mount the host's .aws directory to the container's .aws directory
-      - ~/.aws:/root/.aws:ro
       - projectname-bashhistory:/commandhistory
 volumes:
   projectname-bashhistory:
