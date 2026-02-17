@@ -2,9 +2,19 @@
 CDK package for bootstrapping resources needed to run pulumi, such as the S3 bucket for the state and the KMS key for the encryption.
 
 ## Getting Started
+Setup your AWS Credential using
+```
+aws login
+```
+
 For the first time on a new account using this CDK, run CDK Bootstrap first.
 ```
 cdk bootstrap
+```
+
+After that you should be able to deploy the bootstrap by calling
+```
+cdk deploy
 ```
 
 ## Useful commands
